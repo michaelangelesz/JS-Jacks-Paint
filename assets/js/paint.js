@@ -1,5 +1,5 @@
 function configureListeners() {
-    var images = document.getElementsByTagName('img')
+    var images = document.getElementsByTagName('img');
 
     for (var i = 0; i < images.length; i++) {        
         document.getElementById(images[i].id).addEventListener('mouseover', addOpacity, false)        
@@ -33,9 +33,11 @@ function getProductInfo(paintColor) {
     let colorName;  
     
     switch (paintColor) {
-        case 'pn1':           
-            // set variables for price and color name and invoke a function to update the price     
-            break;           
+        case 'pn1':            
+        price = '$14.99'
+        colorName = 'Lime Green'
+        updatePrice(colorName, price)           
+        break;           
         case 'pn2':
             // set variables for price and color name and invoke a function to update the price    
             break;            
