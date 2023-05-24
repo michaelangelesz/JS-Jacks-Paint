@@ -8,7 +8,9 @@ function configureListeners() {
 }
 
 function addOpacity(event) {
-    // add appropriate CSS class
+    if (!this.classList.contains('dim')){
+        this.classList.add('dim')
+    } 
     getProductInfo(event.target.id);     
 }
 
