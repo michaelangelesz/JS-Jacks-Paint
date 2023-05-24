@@ -86,8 +86,8 @@ function getProductInfo(paintColor) {
         let colorPrice = document.getElementById('color-price');
         colorPrice.textContent = price;
         
-        let color = // select element with corresponding id
-        //display color name
+        let color = document.getElementById('color-name');
+        color.textContent = colorName;
     }
     
 }
