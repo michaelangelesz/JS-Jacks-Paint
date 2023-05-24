@@ -1,7 +1,7 @@
 function configureListeners() {
     var images = document.getElementsByTagName('img')
 
-     for (var i = 0; i < images.length; i++) {        
+    for (var i = 0; i < images.length; i++) {        
         document.getElementById(images[i].id).addEventListener('mouseover', addOpacity, false)        
         document.getElementById(images[i].id).addEventListener('mouseout', removeOpacity, false)
     } 
@@ -15,7 +15,9 @@ function addOpacity(event) {
 }
 
 function removeOpacity(event) {
-     //remove appropriate CSS class
+    if (this.classList.contains('dim')){
+        this.classList.remove('dim');
+    }
 
     let element = document.getElementById('color-price');
         element.textContent = '';
