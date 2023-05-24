@@ -59,7 +59,9 @@ function getProductInfo(paintColor) {
             updatePrice(colorName, price)   
             break;   
         case 'pn6':
-            // set variables for price and color name and invoke a function to update the price        
+            price = '$11.99'
+            colorName = 'Solid Purple'            
+            updatePrice(colorName, price)   
             break;   
         case 'pn7':
             // set variables for price and color name and invoke a function to update the price 
