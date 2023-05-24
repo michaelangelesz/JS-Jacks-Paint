@@ -44,7 +44,7 @@ function getProductInfo(paintColor) {
             updatePrice(colorName, price)     
             break;            
         case 'pn3':
-            price = '$11.99'
+            price = '$22.99'
             colorName = 'Royal Blue'   
             updatePrice(colorName, price)   
             break;   
